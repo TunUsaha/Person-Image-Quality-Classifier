@@ -219,13 +219,13 @@ class PersonImageAnalyzer:
             features.append("Passed initial quality check")
 
         # 2. คะแนนจากคุณภาพภาพ
-        if image_quality_score >= 85:
+        if image_quality_score >= 90:
             score += 25
             features.append("Excellent image quality")
-        elif image_quality_score >= 70:
+        elif image_quality_score >= 85:
             score += 15
             features.append("Good image quality")
-        elif image_quality_score < 60:
+        elif image_quality_score < 70:
             score -= 15
             features.append("Poor image quality")
 
@@ -233,7 +233,7 @@ class PersonImageAnalyzer:
         if metrics.aspect_ratio >= 2.2:
             score += 20
             features.append("Excellent aspect ratio")
-        elif metrics.aspect_ratio >= 1.8:
+        elif metrics.aspect_ratio >= 1.9 and metrics.aspect_ratio < 2.2:
             score += 10
             features.append("Good aspect ratio")
         elif metrics.aspect_ratio < 1.5:
@@ -271,7 +271,7 @@ class PersonImageAnalyzer:
             features.append("Body occlusion detected")
 
         # ตัดสินใจขั้นสุดท้าย (คะแนนมากกว่าหรือเท่ากับ 40 ถือว่า "good")
-        final_good = score >= 40
+        final_good = score >= 60
 
         # สร้างเหตุผล
         if final_good:
