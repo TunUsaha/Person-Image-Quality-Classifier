@@ -174,7 +174,7 @@ class PersonImageAnalyzer:
         if brightness < 40:
             score -= 20
             reason += "too dark, "
-        elif brightness > 220:
+        elif brightness > 350:
             score -= 20
             reason += "too bright, "
 
@@ -236,7 +236,7 @@ class PersonImageAnalyzer:
         elif metrics.aspect_ratio >= 1.9 and metrics.aspect_ratio < 2.2:
             score += 10
             features.append("Good aspect ratio")
-        elif metrics.aspect_ratio < 1.5:
+        elif metrics.aspect_ratio < 1.9:
             score -= 15
             features.append("Poor aspect ratio")
 
@@ -263,7 +263,7 @@ class PersonImageAnalyzer:
 
         # 5. คะแนนลบจากแหล่งกำเนิดแสงและการบดบัง
         if metrics.has_light_sources:
-            score -= 20
+            score -= 30
             features.append("Light sources detected")
 
         if metrics.has_occlusion:
@@ -350,15 +350,15 @@ class PersonImageAnalyzer:
         bright_percentage = bright_pixels / total_pixels
 
         # วิธีที่ 2: ตรวจสอบความแตกต่างระหว่างพื้นที่สว่างที่สุดและมืดที่สุด
-        # แบ่งภาพเป็น 4x4 = 16 ส่วน
+        # แบ่งภาพเป็น 10x10 = 100 ส่วน
         h, w = gray.shape
-        block_h, block_w = h // 4, w // 4
+        block_h, block_w = h // 10, w // 10
 
         max_brightness = 0
         min_brightness = 255
 
-        for i in range(4):
-            for j in range(4):
+        for i in range(10):
+            for j in range(10):
                 block = gray[i*block_h:(i+1)*block_h, j*block_w:(j+1)*block_w]
                 avg_brightness = np.mean(block)
                 max_brightness = max(max_brightness, avg_brightness)
