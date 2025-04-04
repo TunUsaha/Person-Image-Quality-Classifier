@@ -539,28 +539,28 @@ class PersonImageAnalyzer:
 
         # ตรวจสอบอัตราส่วนภาพ - เพิ่มน้ำหนัก
         if aspect_ratio < self.MIN_ASPECT_RATIO:
-            score -= 25
+            score -= 30
             reason += "Aspect ratio is low, "
 
         # ตรวจสอบการมองเห็นศีรษะ - เข้มงวดมากขึ้น
         if not body_parts.has_head:
-            score -= 45
+            score -= 60
             reason += "No head detected, "
         elif body_parts.head_percentage < 75:
-            score -= 20
+            score -= 30
             reason += "Head not sufficiently visible, "
 
         # ตรวจสอบลำตัว - สำคัญ
         if not body_parts.has_torso:
-            score -= 35
+            score -= 60
             reason += "No torso detected, "
         elif body_parts.torso_percentage < 80:
-            score -= 20
+            score -= 30
             reason += "Torso not sufficiently visible, "
 
         # ตรวจสอบขา
         if not body_parts.has_legs:
-            score -= 20
+            score -= 25
             reason += "No legs detected, "
 
         # ตรวจสอบแหล่งกำเนิดแสง - เพิ่มบทลงโทษ
