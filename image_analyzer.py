@@ -47,10 +47,10 @@ class ImageQualityMetrics:
 
 class PersonImageAnalyzer:
     def __init__(self, model_path="yolo11n.pt"):
-        # ค่ากำหนดต่าง ๆ
-        self.MIN_ASPECT_RATIO = 2.0
-        self.BRIGHT_THRESHOLD = 240
-        self.BRIGHT_PIXEL_PERCENTAGE = 0.01
+        # ปรับค่าพื้นฐาน
+        self.MIN_ASPECT_RATIO = 1.7  # ลดจาก 2.0 เพื่อให้ยอมรับภาพที่มีอัตราส่วนต่ำกว่าเล็กน้อย
+        self.BRIGHT_THRESHOLD = 235  # ปรับจาก 240
+        self.BRIGHT_PIXEL_PERCENTAGE = 0.015  # เพิ่มจาก 0.01 เพื่อให้ทนทานต่อแสงมากขึ้น
 
         # ตำแหน่งจุดสำคัญของร่างกายสำหรับการวิเคราะห์
         # กำหนดจุดสำคัญตามดัชนีของ YOLO keypoints
@@ -95,6 +95,9 @@ class PersonImageAnalyzer:
             # วิเคราะห์การบดบัง
             has_occlusion = self.detect_occlusion(results)
 
+            # ตรวจสอบการเคลื่อนไหวในภาพ (motion blur)
+            has_motion = self.detect_motion_blur(image)
+
             # เพิ่มการวิเคราะห์คุณภาพภาพ
             image_quality_score, image_quality_reason = self.analyze_image_quality(image)
 
@@ -110,7 +113,8 @@ class PersonImageAnalyzer:
                     has_occlusion=has_occlusion
                 ),
                 image_quality_score,
-                image_quality_reason
+                image_quality_reason,
+                has_motion  # ส่งค่า has_motion ไปยัง ensemble_decision
             )
 
             # สร้างและส่งคืนผลการวิเคราะห์
@@ -141,6 +145,7 @@ class PersonImageAnalyzer:
                 'feet_percentage': body_parts.feet_percentage,
                 'has_light_sources': has_light_sources,
                 'has_occlusion': has_occlusion,
+                'has_motion': has_motion,  # เพิ่มข้อมูล motion blur ในผลลัพธ์
                 'image_quality_score': image_quality_score,
                 'good': good,
                 'reason': reason
@@ -154,9 +159,6 @@ class PersonImageAnalyzer:
 
     # ปรับปรุงเมธอด analyze_image_quality ให้มีความละเอียดมากขึ้น
     def analyze_image_quality(self, image):
-        """
-        วิเคราะห์คุณภาพของภาพโดยใช้หลากหลายเทคนิคที่มีความสมดุล
-        """
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
         # คำนวณความสว่างและความคมชัด
@@ -166,27 +168,40 @@ class PersonImageAnalyzer:
         # ตรวจสอบความชัดของภาพ
         laplacian = cv2.Laplacian(gray, cv2.CV_64F).var()
 
+        # ตรวจสอบการกระจายตัวของความสว่าง
+        hist = cv2.calcHist([gray], [0], None, [256], [0, 256])
+        hist_norm = hist.flatten() / hist.sum()
+
+        # คำนวณ entropy ของภาพ (วัดความซับซ้อน)
+        non_zero_hist = hist_norm[hist_norm > 0]
+        entropy = -np.sum(non_zero_hist * np.log2(non_zero_hist)) if len(non_zero_hist) > 0 else 0
+
         # ให้คะแนน
         score = 100
         reason = ""
 
         # ตรวจสอบความสว่าง (ปรับให้มีความยืดหยุ่นมากขึ้น)
-        if brightness < 40:
-            score -= 20
+        if brightness < 35:  # ลดจาก 40
+            score -= 15  # ลดจาก 20
             reason += "too dark, "
-        elif brightness > 350:
-            score -= 20
+        elif brightness > 220:  # ลดจาก 350
+            score -= 15  # ลดจาก 20
             reason += "too bright, "
 
         # ตรวจสอบความคมชัด
-        if contrast < 35:
-            score -= 15
+        if contrast < 30:  # ลดจาก 35
+            score -= 10  # ลดจาก 15
             reason += "low contrast, "
 
         # ตรวจสอบความชัด
-        if laplacian < 80:
-            score -= 20
+        if laplacian < 70:  # ลดจาก 80
+            score -= 15  # ลดจาก 20
             reason += "blurry, "
+
+        # ตรวจสอบความซับซ้อนของภาพ
+        if entropy < 3.0:  # ภาพที่มีความซับซ้อนต่ำ
+            score -= 10
+            reason += "low detail, "
 
         # ตัดคำว่า ", " ที่อาจมีอยู่ท้ายสุด
         if reason:
@@ -194,8 +209,29 @@ class PersonImageAnalyzer:
 
         return score, reason
 
+    def detect_motion_blur(self, image):
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+        # คำนวณความชัดของภาพ
+        laplacian = cv2.Laplacian(gray, cv2.CV_64F)
+        variance = laplacian.var()
+
+        # ตรวจสอบขอบในแนวตั้งและแนวนอน
+        sobelx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=3)
+        sobely = cv2.Sobel(gray, cv2.CV_64F, 0, 1, ksize=3)
+
+        # คำนวณค่าเฉลี่ยความคมชัดในแต่ละแกน
+        avg_edge_x = np.mean(np.abs(sobelx))
+        avg_edge_y = np.mean(np.abs(sobely))
+
+        # คำนวณอัตราส่วนระหว่างแนวตั้งและแนวนอน
+        edge_ratio = avg_edge_y / avg_edge_x if avg_edge_x > 0 else 1.0
+
+        # เกณฑ์สำหรับการตรวจจับการเคลื่อนไหว
+        return variance < 100 or edge_ratio > 2.2 or edge_ratio < 0.45
+
     # ปรับเมธอด ensemble_decision ให้มีความสมดุลมากขึ้น
-    def ensemble_decision(self, metrics, image_quality_score, image_quality_reason):
+    def ensemble_decision(self, metrics, image_quality_score, image_quality_reason, has_motion=False):
         """
         ใช้การตัดสินใจแบบ ensemble ที่มีความสมดุลระหว่าง precision และ recall
         """
@@ -215,63 +251,68 @@ class PersonImageAnalyzer:
 
         # 1. คะแนนจากการตัดสินใจเบื้องต้น
         if initial_good:
-            score += 30
+            score += 35  # เพิ่มจาก 30
             features.append("Passed initial quality check")
 
         # 2. คะแนนจากคุณภาพภาพ
-        if image_quality_score >= 90:
+        if image_quality_score >= 85:
             score += 25
             features.append("Excellent image quality")
-        elif image_quality_score >= 85:
+        elif image_quality_score >= 75:
             score += 15
             features.append("Good image quality")
-        elif image_quality_score < 70:
+        elif image_quality_score < 65:
             score -= 25
             features.append("Poor image quality")
 
         # 3. คะแนนจากอัตราส่วนภาพ
-        if metrics.aspect_ratio >= 2.2:
+        if metrics.aspect_ratio >= 2.0:
             score += 20
             features.append("Excellent aspect ratio")
-        elif metrics.aspect_ratio >= 1.9 and metrics.aspect_ratio < 2.2:
+        elif metrics.aspect_ratio >= 1.8 and metrics.aspect_ratio < 2.0:
             score += 5
             features.append("Good aspect ratio")
-        elif metrics.aspect_ratio < 1.9:
-            score -= 120
+        elif metrics.aspect_ratio < 1.8:
+            score -= 50  # ลดจาก 120
             features.append("Poor aspect ratio")
 
         # 4. คะแนนจากการมองเห็นศีรษะและลำตัว
-        if metrics.body_parts.has_head and metrics.body_parts.head_percentage >= 95:
+        if metrics.body_parts.has_head and metrics.body_parts.head_percentage >= 90:
             score += 15
             features.append("Full head visibility")
-        elif metrics.body_parts.has_head and metrics.body_parts.head_percentage >= 80:
+        elif metrics.body_parts.has_head and metrics.body_parts.head_percentage >= 70:
             score += 5
             features.append("Good head visibility")
         elif not metrics.body_parts.has_head:
-            score -= 50
+            score -= 45  # ลดจาก 50
             features.append("No head detected")
 
-        if metrics.body_parts.has_torso and metrics.body_parts.torso_percentage >= 95:
+        if metrics.body_parts.has_torso and metrics.body_parts.torso_percentage >= 90:
             score += 15
             features.append("Full torso visibility")
-        elif metrics.body_parts.has_torso and metrics.body_parts.torso_percentage >= 80:
+        elif metrics.body_parts.has_torso and metrics.body_parts.torso_percentage >= 70:
             score += 5
             features.append("Good torso visibility")
         elif not metrics.body_parts.has_torso:
-            score -= 100
+            score -= 45  # ลดจาก 100
             features.append("No torso detected")
 
         # 5. คะแนนลบจากแหล่งกำเนิดแสงและการบดบัง
         if metrics.has_light_sources:
-            score -= 40
+            score -= 60  # เพิ่มจาก 40
             features.append("Light sources detected")
 
         if metrics.has_occlusion:
-            score -= 120
+            score -= 40  # ลดจาก 120
             features.append("Body occlusion detected")
 
-        # ตัดสินใจขั้นสุดท้าย (คะแนนมากกว่าหรือเท่ากับ 40 ถือว่า "good")
-        final_good = score >= 65
+        # 6. คะแนนลบจาก motion blur
+        if has_motion:
+            score -= 20
+            features.append("Motion blur detected")
+
+        # ตัดสินใจขั้นสุดท้าย
+        final_good = score >= 60  # ลดจาก 65
 
         # สร้างเหตุผล
         if final_good:
@@ -338,36 +379,36 @@ class PersonImageAnalyzer:
         return self.results
 
     def detect_light_sources(self, image: np.ndarray) -> bool:
-        """
-        ตรวจสอบแหล่งกำเนิดแสงด้วยวิธีที่ละเอียดขึ้น
-        """
         # แปลงเป็น grayscale
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-        # วิธีที่ 1: ตรวจสอบพิกเซลที่สว่างมาก
+        # ตรวจหาพิกเซลที่สว่างมาก
         bright_pixels = np.sum(gray > self.BRIGHT_THRESHOLD)
         total_pixels = gray.size
         bright_percentage = bright_pixels / total_pixels
 
-        # วิธีที่ 2: ตรวจสอบความแตกต่างระหว่างพื้นที่สว่างที่สุดและมืดที่สุด
-        # แบ่งภาพเป็น 10x10 = 100 ส่วน
+        # ตรวจสอบการกระจายตัวของแสง
         h, w = gray.shape
-        block_h, block_w = h // 10, w // 10
+        block_h, block_w = h // 15, w // 15
 
-        max_brightness = 0
-        min_brightness = 255
+        brightness_values = []
+        for i in range(15):
+            for j in range(15):
+                if i*block_h < h and j*block_w < w:
+                    block = gray[i*block_h:min((i+1)*block_h, h), j*block_w:min((j+1)*block_w, w)]
+                    if block.size > 0:
+                        avg_brightness = np.mean(block)
+                        brightness_values.append(avg_brightness)
 
-        for i in range(10):
-            for j in range(10):
-                block = gray[i*block_h:(i+1)*block_h, j*block_w:(j+1)*block_w]
-                avg_brightness = np.mean(block)
-                max_brightness = max(max_brightness, avg_brightness)
-                min_brightness = min(min_brightness, avg_brightness)
+        # ตรวจแสงที่สว่างมากในบางบริเวณ (เช่นในภาพตัวอย่าง)
+        max_brightness = max(brightness_values) if brightness_values else 0
+        bright_blocks = sum(1 for b in brightness_values if b > 220)
+        bright_block_percentage = bright_blocks / len(brightness_values) if brightness_values else 0
 
-        brightness_range = max_brightness - min_brightness
-
-        # ตัดสินใจว่ามีแหล่งกำเนิดแสงหรือไม่
-        has_light_sources = bright_percentage > self.BRIGHT_PIXEL_PERCENTAGE or brightness_range > 100
+        # เพิ่มเงื่อนไขที่เข้มงวดขึ้นสำหรับการตรวจจับแสงจ้า
+        has_light_sources = (bright_percentage > self.BRIGHT_PIXEL_PERCENTAGE) or \
+                            (max_brightness > 230 and bright_block_percentage > 0.05) or \
+                            (bright_blocks > 2 and max_brightness > 220)
 
         return has_light_sources
 
@@ -531,50 +572,47 @@ class PersonImageAnalyzer:
         return body_parts
 
     def check_image_quality(self, aspect_ratio, body_parts, has_light_sources, has_occlusion) -> Tuple[bool, str]:
-        """
-        เพิ่มความเข้มงวดเพื่อลด False Positive
-        """
         score = 100
         reason = ""
 
-        # ตรวจสอบอัตราส่วนภาพ - เพิ่มน้ำหนัก
+        # ตรวจสอบอัตราส่วนภาพ - ปรับลดน้ำหนัก
         if aspect_ratio < self.MIN_ASPECT_RATIO:
-            score -= 30
+            score -= 25  # ลดจาก 30
             reason += "Aspect ratio is low, "
 
-        # ตรวจสอบการมองเห็นศีรษะ - เข้มงวดมากขึ้น
+        # ตรวจสอบการมองเห็นศีรษะ
         if not body_parts.has_head:
-            score -= 60
+            score -= 55  # ลดจาก 60
             reason += "No head detected, "
-        elif body_parts.head_percentage < 75:
-            score -= 30
+        elif body_parts.head_percentage < 70:  # ลดจาก 75
+            score -= 25  # ลดจาก 30
             reason += "Head not sufficiently visible, "
 
-        # ตรวจสอบลำตัว - สำคัญ
+        # ตรวจสอบลำตัว
         if not body_parts.has_torso:
-            score -= 60
+            score -= 55  # ลดจาก 60
             reason += "No torso detected, "
-        elif body_parts.torso_percentage < 80:
-            score -= 30
+        elif body_parts.torso_percentage < 75:  # ลดจาก 80
+            score -= 25  # ลดจาก 30
             reason += "Torso not sufficiently visible, "
 
         # ตรวจสอบขา
         if not body_parts.has_legs:
-            score -= 25
+            score -= 20  # ลดจาก 25
             reason += "No legs detected, "
 
-        # ตรวจสอบแหล่งกำเนิดแสง - เพิ่มบทลงโทษ
+        # เพิ่มน้ำหนักให้กับการตรวจสอบแสง (เป็นปัญหาหลักของ False Positive)
         if has_light_sources:
-            score -= 25
+            score -= 35  # เพิ่มจาก 25
             reason += "Light sources detected, "
 
-        # ตรวจสอบการบดบัง - เพิ่มบทลงโทษ
+        # ปรับการตรวจสอบการบดบัง
         if has_occlusion:
-            score -= 25
+            score -= 30  # เพิ่มจาก 25
             reason += "Body occlusion detected, "
 
-        # ปรับเกณฑ์ให้สูงขึ้น
-        good = score >= 75
+        # ปรับเกณฑ์การตัดสิน
+        good = score >= 70  # ลดจาก 75
 
         if reason:
             reason = reason.rstrip(", ")
@@ -633,8 +671,8 @@ class PersonImageAnalyzer:
                 if idx < len(keypoints) and keypoints[idx][2] < visibility_threshold:
                     invisible_landmarks += 1
 
-            # ถ้ามีจุดสำคัญที่มองไม่เห็นมากกว่า 1 จุด
-            if invisible_landmarks > 1:
+            # ถ้ามีจุดสำคัญที่มองไม่เห็นมากกว่า 2 จุด
+            if invisible_landmarks > 2:
                 return True
 
             # ตรวจสอบความไม่สมมาตรของร่างกาย (ซึ่งอาจบ่งชี้ถึงการบดบัง)
@@ -661,7 +699,7 @@ class PersonImageAnalyzer:
                 right_avg = sum(right_side) / len(right_side)
 
                 # ลดค่าความแตกต่างที่ยอมรับได้
-                if abs(left_avg - right_avg) > 0.3:  # ลดจาก 0.4 หรือ 0.6
+                if abs(left_avg - right_avg) > 0.4:  # ลดจาก 0.4 หรือ 0.6
                     return True
 
         # ในกรณีที่ YOLO ไม่มีข้อมูล keypoints ให้ใช้การวิเคราะห์จากกรอบสี่เหลี่ยม
@@ -678,7 +716,7 @@ class PersonImageAnalyzer:
                 height = y2 - y1
 
                 # ถ้าความกว้างมากกว่า 70% ของความสูง อาจบ่งชี้ถึงการบดบัง
-                if width > height * 0.65:
+                if width > height * 0.7:
                     return True
 
         return False
