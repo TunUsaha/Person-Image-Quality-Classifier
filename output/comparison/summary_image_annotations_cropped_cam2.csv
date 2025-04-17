@@ -1,2 +1,2 @@
 camera,total_images,matching_classifications,accuracy,true_positive,true_negative,false_positive,false_negative,precision,recall,f1_score
-image_annotations_cropped_cam2,3086,2564,83.08489954633829,2213,351,364,158,0.8587504850601475,0.9333614508646141,0.8945028294260308
+image_annotations_cropped_cam2,3086,2420,78.41866493843163,1985,435,280,386,0.8763796909492274,0.8371994938844369,0.8563416738567731

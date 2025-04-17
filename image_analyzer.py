@@ -215,7 +215,7 @@ class PersonImageAnalyzer:
 
         # 1. คะแนนจากการตัดสินใจเบื้องต้น
         if initial_good:
-            score += 40
+            score += 30
             features.append("Passed initial quality check")
 
         # 2. คะแนนจากคุณภาพภาพ
@@ -226,7 +226,7 @@ class PersonImageAnalyzer:
             score += 15
             features.append("Good image quality")
         elif image_quality_score < 70:
-            score -= 15
+            score -= 25
             features.append("Poor image quality")
 
         # 3. คะแนนจากอัตราส่วนภาพ
@@ -234,10 +234,10 @@ class PersonImageAnalyzer:
             score += 20
             features.append("Excellent aspect ratio")
         elif metrics.aspect_ratio >= 1.9 and metrics.aspect_ratio < 2.2:
-            score += 10
+            score += 5
             features.append("Good aspect ratio")
         elif metrics.aspect_ratio < 1.9:
-            score -= 15
+            score -= 120
             features.append("Poor aspect ratio")
 
         # 4. คะแนนจากการมองเห็นศีรษะและลำตัว
@@ -245,33 +245,33 @@ class PersonImageAnalyzer:
             score += 15
             features.append("Full head visibility")
         elif metrics.body_parts.has_head and metrics.body_parts.head_percentage >= 80:
-            score += 8
+            score += 5
             features.append("Good head visibility")
         elif not metrics.body_parts.has_head:
-            score -= 30
+            score -= 50
             features.append("No head detected")
 
         if metrics.body_parts.has_torso and metrics.body_parts.torso_percentage >= 95:
             score += 15
             features.append("Full torso visibility")
         elif metrics.body_parts.has_torso and metrics.body_parts.torso_percentage >= 80:
-            score += 8
+            score += 5
             features.append("Good torso visibility")
         elif not metrics.body_parts.has_torso:
-            score -= 30
+            score -= 100
             features.append("No torso detected")
 
         # 5. คะแนนลบจากแหล่งกำเนิดแสงและการบดบัง
         if metrics.has_light_sources:
-            score -= 30
+            score -= 40
             features.append("Light sources detected")
 
         if metrics.has_occlusion:
-            score -= 15
+            score -= 120
             features.append("Body occlusion detected")
 
         # ตัดสินใจขั้นสุดท้าย (คะแนนมากกว่าหรือเท่ากับ 40 ถือว่า "good")
-        final_good = score >= 60
+        final_good = score >= 65
 
         # สร้างเหตุผล
         if final_good:
