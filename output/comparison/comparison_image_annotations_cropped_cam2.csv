@@ -125,7 +125,7 @@ person_000123_image_000156_conf_80.76.jpg,junk,junk,"Image failed due to: Poor a
 person_000124_image_000157_conf_74.77.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Body occlusion detected",False,False
 person_000125_image_000158_conf_81.88.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
 person_000126_image_000158_conf_75.69.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Body occlusion detected",False,False
-person_000127_image_000159_conf_77.21.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Body occlusion detected",False,False
+person_000127_image_000159_conf_77.21.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Light sources detected, Body occlusion detected",False,False
 person_000128_image_000161_conf_74.85.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
 person_000129_image_000165_conf_72.41.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
 person_000130_image_000168_conf_74.08.jpg,junk,junk,"Image failed due to: No head detected, No torso detected, Body occlusion detected",False,False
@@ -245,7 +245,7 @@ person_000243_image_000338_conf_75.03.jpg,junk,junk,"Image failed due to: Poor a
 person_000244_image_000338_conf_70.69.jpg,junk,junk,"Image failed due to: No head detected, No torso detected, Light sources detected, Body occlusion detected",False,False
 person_000245_image_000339_conf_88.78.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Body occlusion detected",False,False
 person_000246_image_000341_conf_82.33.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Body occlusion detected",False,False
-person_000247_image_000341_conf_74.25.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Body occlusion detected",False,False
+person_000247_image_000341_conf_74.25.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Light sources detected, Body occlusion detected",False,False
 person_000248_image_000342_conf_74.17.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Body occlusion detected",False,False
 person_000249_image_000343_conf_78.28.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000250_image_000344_conf_72.40.jpg,good,junk,Image failed due to: Light sources detected,True,False
@@ -261,7 +261,7 @@ person_000259_image_000352_conf_72.93.jpg,junk,junk,Image failed due to: Light s
 person_000260_image_000353_conf_77.69.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Light sources detected, Body occlusion detected",False,False
 person_000261_image_000353_conf_74.67.jpg,junk,junk,"Image failed due to: No head detected, No torso detected, Body occlusion detected",False,False
 person_000262_image_000353_conf_73.62.jpg,junk,junk,"Image failed due to: No head detected, No torso detected, Light sources detected, Body occlusion detected",False,False
-person_000263_image_000355_conf_89.95.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000263_image_000355_conf_89.95.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000264_image_000355_conf_84.56.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000265_image_000355_conf_79.41.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000266_image_000355_conf_73.02.jpg,good,junk,Image failed due to: Light sources detected,True,False
@@ -275,13 +275,13 @@ person_000273_image_000356_conf_77.11.jpg,junk,good,"Image passed with positive 
 person_000274_image_000357_conf_88.58.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000275_image_000357_conf_85.76.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000276_image_000357_conf_78.95.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000277_image_000358_conf_89.95.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000277_image_000358_conf_89.95.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000278_image_000358_conf_84.56.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000279_image_000358_conf_79.41.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000280_image_000358_conf_73.02.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000281_image_000358_conf_72.57.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000282_image_000358_conf_71.26.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
-person_000283_image_000359_conf_87.51.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000283_image_000359_conf_87.51.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000284_image_000359_conf_85.46.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000285_image_000359_conf_83.70.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000286_image_000359_conf_83.40.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -301,7 +301,7 @@ person_000299_image_000362_conf_86.08.jpg,good,good,"Image passed with positive 
 person_000300_image_000362_conf_84.01.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000301_image_000362_conf_82.84.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000302_image_000362_conf_78.98.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000303_image_000363_conf_88.41.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000303_image_000363_conf_88.41.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000304_image_000363_conf_87.57.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000305_image_000363_conf_80.93.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000306_image_000363_conf_79.46.jpg,good,junk,Image failed due to: Light sources detected,True,False
@@ -309,7 +309,7 @@ person_000307_image_000364_conf_88.77.jpg,good,good,"Image passed with positive 
 person_000308_image_000364_conf_88.16.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000309_image_000364_conf_87.25.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000310_image_000364_conf_84.09.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000311_image_000364_conf_78.47.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000311_image_000364_conf_78.47.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000312_image_000364_conf_74.12.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000313_image_000365_conf_91.09.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000314_image_000365_conf_84.58.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
@@ -319,7 +319,7 @@ person_000317_image_000365_conf_77.52.jpg,good,junk,Image failed due to: Light s
 person_000318_image_000366_conf_90.91.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000319_image_000366_conf_89.92.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000320_image_000366_conf_85.09.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000321_image_000366_conf_82.55.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000321_image_000366_conf_82.55.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000322_image_000366_conf_79.27.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000323_image_000367_conf_90.41.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Body occlusion detected",False,False
 person_000324_image_000367_conf_87.67.jpg,good,junk,Image failed due to: Light sources detected,True,False
@@ -329,29 +329,29 @@ person_000327_image_000367_conf_80.62.jpg,good,junk,Image failed due to: Light s
 person_000328_image_000367_conf_73.33.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000329_image_000367_conf_70.48.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000330_image_000368_conf_89.74.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
-person_000331_image_000368_conf_87.47.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000332_image_000368_conf_86.20.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000331_image_000368_conf_87.47.jpg,good,junk,Image failed due to: Light sources detected,True,False
+person_000332_image_000368_conf_86.20.jpg,good,junk,"Image failed due to: Light sources detected, Motion blur detected",True,False
 person_000333_image_000368_conf_82.07.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000334_image_000368_conf_73.47.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000335_image_000368_conf_72.48.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Light sources detected",False,False
 person_000336_image_000369_conf_89.74.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
-person_000337_image_000369_conf_87.47.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000338_image_000369_conf_86.20.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000337_image_000369_conf_87.47.jpg,good,junk,Image failed due to: Light sources detected,True,False
+person_000338_image_000369_conf_86.20.jpg,good,junk,"Image failed due to: Light sources detected, Motion blur detected",True,False
 person_000339_image_000369_conf_82.07.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000340_image_000369_conf_73.47.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000341_image_000369_conf_72.48.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Light sources detected",False,False
 person_000342_image_000370_conf_89.74.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
-person_000343_image_000370_conf_87.47.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000344_image_000370_conf_86.20.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000343_image_000370_conf_87.47.jpg,good,junk,Image failed due to: Light sources detected,True,False
+person_000344_image_000370_conf_86.20.jpg,good,junk,"Image failed due to: Light sources detected, Motion blur detected",True,False
 person_000345_image_000370_conf_82.07.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000346_image_000370_conf_73.47.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000347_image_000370_conf_72.48.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Light sources detected",False,False
-person_000348_image_000371_conf_91.69.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000348_image_000371_conf_91.69.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000349_image_000371_conf_91.07.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Body occlusion detected",False,False
 person_000350_image_000371_conf_89.52.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000351_image_000371_conf_86.98.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000352_image_000371_conf_78.11.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000353_image_000372_conf_89.86.jpg,good,junk,Image failed due to: Poor aspect ratio,True,False
+person_000353_image_000372_conf_89.86.jpg,good,junk,"Image failed due to: Poor aspect ratio, Light sources detected",True,False
 person_000354_image_000372_conf_89.68.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000355_image_000372_conf_87.09.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000356_image_000372_conf_83.31.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -387,7 +387,7 @@ person_000385_image_000377_conf_84.37.jpg,junk,junk,Image failed due to: Poor as
 person_000386_image_000377_conf_82.53.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Motion blur detected",False,False
 person_000387_image_000377_conf_79.59.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000388_image_000377_conf_72.40.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000389_image_000377_conf_70.78.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
+person_000389_image_000377_conf_70.78.jpg,junk,junk,Image failed due to: Light sources detected,False,False
 person_000390_image_000378_conf_88.19.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000391_image_000378_conf_86.59.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000392_image_000378_conf_84.99.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Body occlusion detected",False,False
@@ -538,7 +538,7 @@ person_000536_image_000403_conf_88.58.jpg,good,good,"Image passed with positive 
 person_000537_image_000403_conf_86.36.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000538_image_000403_conf_80.73.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
 person_000539_image_000403_conf_74.48.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000540_image_000403_conf_72.01.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000540_image_000403_conf_72.01.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000541_image_000403_conf_70.39.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000542_image_000404_conf_82.69.jpg,junk,junk,"Image failed due to: Poor aspect ratio, Body occlusion detected",False,False
 person_000543_image_000404_conf_81.93.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -550,7 +550,7 @@ person_000548_image_000405_conf_83.42.jpg,junk,junk,"Image failed due to: Poor a
 person_000549_image_000405_conf_81.74.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000550_image_000405_conf_77.11.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000551_image_000405_conf_75.98.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000552_image_000405_conf_72.62.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000552_image_000405_conf_72.62.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000553_image_000405_conf_71.08.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
 person_000554_image_000406_conf_88.91.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000555_image_000406_conf_88.07.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
@@ -640,7 +640,7 @@ person_000638_image_000419_conf_88.62.jpg,junk,junk,"Image failed due to: Poor a
 person_000639_image_000419_conf_88.49.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000640_image_000419_conf_85.08.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000641_image_000419_conf_84.50.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000642_image_000419_conf_84.20.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000642_image_000419_conf_84.20.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000643_image_000420_conf_89.98.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000644_image_000420_conf_89.00.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
 person_000645_image_000420_conf_85.58.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -781,7 +781,7 @@ person_000779_image_000444_conf_89.97.jpg,junk,good,"Image passed with positive 
 person_000780_image_000444_conf_82.06.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000781_image_000444_conf_81.58.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000782_image_000444_conf_79.86.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_000783_image_000444_conf_71.41.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000783_image_000444_conf_71.41.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000784_image_000445_conf_89.25.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_000785_image_000445_conf_85.12.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000786_image_000445_conf_80.45.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -845,7 +845,7 @@ person_000843_image_000457_conf_78.02.jpg,good,good,"Image passed with positive 
 person_000844_image_000457_conf_75.69.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000845_image_000458_conf_91.76.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000846_image_000458_conf_91.67.jpg,good,junk,Image failed due to: Poor aspect ratio,True,False
-person_000847_image_000458_conf_84.14.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000847_image_000458_conf_84.14.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000848_image_000458_conf_80.54.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000849_image_000458_conf_80.00.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000850_image_000458_conf_77.41.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -857,7 +857,7 @@ person_000855_image_000459_conf_84.04.jpg,good,good,"Image passed with positive 
 person_000856_image_000459_conf_82.87.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000857_image_000460_conf_91.76.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000858_image_000460_conf_91.67.jpg,good,junk,Image failed due to: Poor aspect ratio,True,False
-person_000859_image_000460_conf_84.14.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000859_image_000460_conf_84.14.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000860_image_000460_conf_80.54.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000861_image_000460_conf_80.00.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000862_image_000460_conf_77.41.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -874,7 +874,7 @@ person_000872_image_000462_conf_79.25.jpg,good,good,"Image passed with positive 
 person_000873_image_000463_conf_92.46.jpg,good,junk,Image failed due to: Poor aspect ratio,True,False
 person_000874_image_000463_conf_84.76.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000875_image_000463_conf_84.39.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
-person_000876_image_000463_conf_76.10.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_000876_image_000463_conf_76.10.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_000877_image_000464_conf_90.99.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000878_image_000464_conf_80.66.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_000879_image_000464_conf_71.26.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1212,7 +1212,7 @@ person_001210_image_000529_conf_87.61.jpg,good,good,"Image passed with positive 
 person_001211_image_000529_conf_82.75.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001212_image_000529_conf_82.35.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001213_image_000529_conf_77.11.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001214_image_000529_conf_75.08.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001214_image_000529_conf_75.08.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001215_image_000530_conf_87.61.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001216_image_000530_conf_81.78.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001217_image_000530_conf_81.35.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1248,7 +1248,7 @@ person_001246_image_000535_conf_74.74.jpg,good,good,"Image passed with positive 
 person_001247_image_000536_conf_89.69.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001248_image_000536_conf_80.09.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001249_image_000536_conf_78.59.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001250_image_000536_conf_78.43.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001250_image_000536_conf_78.43.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001251_image_000536_conf_78.27.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001252_image_000536_conf_74.19.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001253_image_000536_conf_70.60.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
@@ -1441,7 +1441,7 @@ person_001439_image_000571_conf_86.79.jpg,junk,good,"Image passed with positive 
 person_001440_image_000571_conf_86.32.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001441_image_000571_conf_85.79.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001442_image_000571_conf_83.85.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001443_image_000571_conf_82.46.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001443_image_000571_conf_82.46.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001444_image_000571_conf_73.93.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001445_image_000571_conf_72.90.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001446_image_000571_conf_70.06.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1470,13 +1470,13 @@ person_001468_image_000575_conf_70.61.jpg,good,good,"Image passed with positive 
 person_001469_image_000576_conf_84.12.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001470_image_000576_conf_83.99.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001471_image_000576_conf_80.93.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001472_image_000576_conf_76.79.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001472_image_000576_conf_76.79.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001473_image_000577_conf_88.27.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",False,True
 person_001474_image_000577_conf_87.88.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001475_image_000577_conf_85.56.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001476_image_000577_conf_76.88.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001477_image_000577_conf_73.72.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001478_image_000577_conf_72.15.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001478_image_000577_conf_72.15.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001479_image_000578_conf_86.35.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001480_image_000578_conf_85.75.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001481_image_000578_conf_85.51.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1509,7 +1509,7 @@ person_001507_image_000582_conf_92.72.jpg,junk,junk,Image failed due to: Poor as
 person_001508_image_000582_conf_90.01.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001509_image_000582_conf_83.25.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001510_image_000582_conf_80.46.jpg,good,junk,Image failed due to: Poor aspect ratio,True,False
-person_001511_image_000582_conf_75.96.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001511_image_000582_conf_75.96.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001512_image_000583_conf_90.86.jpg,junk,junk,Image failed due to: Poor aspect ratio,False,False
 person_001513_image_000583_conf_88.77.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001514_image_000583_conf_88.13.jpg,good,junk,Image failed due to: Poor aspect ratio,True,False
@@ -1523,7 +1523,7 @@ person_001521_image_000584_conf_83.26.jpg,good,good,"Image passed with positive 
 person_001522_image_000584_conf_80.99.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001523_image_000585_conf_86.36.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001524_image_000585_conf_84.76.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001525_image_000585_conf_82.19.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001525_image_000585_conf_82.19.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001526_image_000585_conf_78.24.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001527_image_000585_conf_76.51.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001528_image_000585_conf_73.41.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1532,7 +1532,7 @@ person_001530_image_000586_conf_85.53.jpg,good,good,"Image passed with positive 
 person_001531_image_000586_conf_81.16.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001532_image_000586_conf_79.87.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001533_image_000586_conf_79.52.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001534_image_000586_conf_78.59.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001534_image_000586_conf_78.59.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001535_image_000586_conf_72.34.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001536_image_000586_conf_71.60.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001537_image_000587_conf_81.05.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1592,7 +1592,7 @@ person_001590_image_000595_conf_72.82.jpg,good,good,"Image passed with positive 
 person_001591_image_000595_conf_71.59.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001592_image_000596_conf_90.44.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001593_image_000596_conf_81.91.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001594_image_000596_conf_74.39.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001594_image_000596_conf_74.39.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001595_image_000596_conf_70.08.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001596_image_000597_conf_84.88.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001597_image_000597_conf_82.81.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1645,7 +1645,7 @@ person_001643_image_000606_conf_85.50.jpg,good,good,"Image passed with positive 
 person_001644_image_000606_conf_85.07.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001645_image_000606_conf_84.70.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001646_image_000606_conf_81.96.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001647_image_000606_conf_76.45.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001647_image_000606_conf_76.45.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001648_image_000606_conf_73.17.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001649_image_000606_conf_71.70.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001650_image_000607_conf_89.68.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1695,7 +1695,7 @@ person_001693_image_000616_conf_82.96.jpg,good,good,"Image passed with positive 
 person_001694_image_000616_conf_78.85.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001695_image_000616_conf_78.71.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001696_image_000616_conf_76.53.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
-person_001697_image_000617_conf_85.14.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001697_image_000617_conf_85.14.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001698_image_000617_conf_84.77.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001699_image_000617_conf_82.05.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001700_image_000617_conf_78.96.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1750,7 +1750,7 @@ person_001748_image_000624_conf_79.48.jpg,good,good,"Image passed with positive 
 person_001749_image_000624_conf_75.73.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001750_image_000624_conf_73.91.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001751_image_000625_conf_90.44.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001752_image_000625_conf_81.05.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001752_image_000625_conf_81.05.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001753_image_000625_conf_79.44.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001754_image_000625_conf_79.14.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001755_image_000625_conf_75.05.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1827,7 +1827,7 @@ person_001825_image_000637_conf_85.67.jpg,good,good,"Image passed with positive 
 person_001826_image_000637_conf_78.76.jpg,junk,junk,"Image failed due to: Poor aspect ratio, No head detected, No torso detected, Body occlusion detected",False,False
 person_001827_image_000637_conf_73.95.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001828_image_000637_conf_72.49.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001829_image_000638_conf_84.34.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001829_image_000638_conf_84.34.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001830_image_000638_conf_81.49.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001831_image_000638_conf_81.46.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001832_image_000638_conf_80.99.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
@@ -1843,7 +1843,7 @@ person_001841_image_000640_conf_70.30.jpg,good,good,"Image passed with positive 
 person_001842_image_000641_conf_88.64.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001843_image_000641_conf_86.13.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001844_image_000641_conf_84.27.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001845_image_000642_conf_88.00.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001845_image_000642_conf_88.00.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001846_image_000642_conf_83.06.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001847_image_000642_conf_80.92.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001848_image_000642_conf_79.47.jpg,junk,junk,"Image failed due to: No head detected, No torso detected, Body occlusion detected",False,False
@@ -1884,7 +1884,7 @@ person_001882_image_000648_conf_80.07.jpg,good,good,"Image passed with positive 
 person_001883_image_000648_conf_79.19.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001884_image_000648_conf_76.73.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001885_image_000648_conf_73.74.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001886_image_000649_conf_87.40.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001886_image_000649_conf_87.40.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001887_image_000649_conf_87.08.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001888_image_000649_conf_84.46.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001889_image_000649_conf_77.45.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1913,7 +1913,7 @@ person_001911_image_000652_conf_71.99.jpg,good,good,"Image passed with positive 
 person_001912_image_000653_conf_88.68.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001913_image_000653_conf_84.39.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001914_image_000653_conf_82.54.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_001915_image_000653_conf_79.46.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001915_image_000653_conf_79.46.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001916_image_000653_conf_78.15.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001917_image_000653_conf_77.15.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001918_image_000653_conf_72.43.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -1928,7 +1928,7 @@ person_001926_image_000655_conf_84.48.jpg,good,good,"Image passed with positive 
 person_001927_image_000655_conf_82.76.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001928_image_000655_conf_82.34.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001929_image_000655_conf_79.01.jpg,good,junk,"Image failed due to: No head detected, No torso detected, Body occlusion detected",True,False
-person_001930_image_000655_conf_77.74.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_001930_image_000655_conf_77.74.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_001931_image_000655_conf_72.54.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001932_image_000655_conf_71.98.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_001933_image_000656_conf_87.82.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2125,7 +2125,7 @@ person_002123_image_000687_conf_88.50.jpg,good,good,"Image passed with positive 
 person_002124_image_000687_conf_86.99.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002125_image_000687_conf_83.98.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002126_image_000687_conf_81.90.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002127_image_000687_conf_79.94.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002127_image_000687_conf_79.94.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002128_image_000687_conf_78.57.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_002129_image_000687_conf_75.22.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002130_image_000687_conf_70.16.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
@@ -2205,7 +2205,7 @@ person_002203_image_000697_conf_74.40.jpg,good,good,"Image passed with positive 
 person_002204_image_000698_conf_90.60.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002205_image_000698_conf_88.09.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002206_image_000698_conf_85.11.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002207_image_000698_conf_76.49.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002207_image_000698_conf_76.49.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002208_image_000698_conf_72.72.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002209_image_000698_conf_72.72.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002210_image_000698_conf_71.18.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2240,7 +2240,7 @@ person_002238_image_000703_conf_83.85.jpg,junk,good,"Image passed with positive 
 person_002239_image_000703_conf_83.47.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002240_image_000703_conf_78.56.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_002241_image_000703_conf_75.06.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002242_image_000703_conf_73.70.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002242_image_000703_conf_73.70.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002243_image_000704_conf_88.29.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002244_image_000704_conf_86.83.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002245_image_000704_conf_83.95.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2468,7 +2468,7 @@ person_002466_image_000745_conf_82.86.jpg,good,good,"Image passed with positive 
 person_002467_image_000745_conf_76.03.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002468_image_000745_conf_73.56.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002469_image_000745_conf_72.81.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002470_image_000745_conf_70.10.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002470_image_000745_conf_70.10.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002471_image_000746_conf_87.73.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002472_image_000746_conf_83.67.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002473_image_000746_conf_83.23.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2522,7 +2522,7 @@ person_002520_image_000753_conf_71.61.jpg,good,good,"Image passed with positive 
 person_002521_image_000753_conf_70.17.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002522_image_000754_conf_86.92.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002523_image_000754_conf_82.95.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
-person_002524_image_000754_conf_80.49.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002524_image_000754_conf_80.49.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002525_image_000754_conf_77.55.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002526_image_000754_conf_73.92.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002527_image_000755_conf_86.51.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Good aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2551,7 +2551,7 @@ person_002549_image_000758_conf_86.59.jpg,good,good,"Image passed with positive 
 person_002550_image_000758_conf_82.03.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_002551_image_000758_conf_81.94.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002552_image_000758_conf_71.50.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002553_image_000758_conf_70.89.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002553_image_000758_conf_70.89.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002554_image_000759_conf_87.70.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002555_image_000759_conf_86.92.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002556_image_000759_conf_85.55.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
@@ -2667,7 +2667,7 @@ person_002665_image_000779_conf_81.15.jpg,good,good,"Image passed with positive 
 person_002666_image_000779_conf_78.89.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002667_image_000779_conf_74.42.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002668_image_000780_conf_88.28.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002669_image_000780_conf_85.81.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002669_image_000780_conf_85.81.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002670_image_000780_conf_83.72.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002671_image_000780_conf_79.35.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002672_image_000780_conf_77.43.jpg,good,junk,"Image failed due to: No head detected, No torso detected, Body occlusion detected",True,False
@@ -2678,7 +2678,7 @@ person_002676_image_000781_conf_86.67.jpg,good,good,"Image passed with positive 
 person_002677_image_000781_conf_84.14.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_002678_image_000781_conf_84.03.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002679_image_000781_conf_78.47.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002680_image_000781_conf_73.60.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002680_image_000781_conf_73.60.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002681_image_000782_conf_90.89.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_002682_image_000782_conf_89.45.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002683_image_000782_conf_85.75.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2744,7 +2744,7 @@ person_002742_image_000791_conf_86.62.jpg,good,good,"Image passed with positive 
 person_002743_image_000791_conf_83.19.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002744_image_000791_conf_72.77.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_002745_image_000791_conf_72.31.jpg,good,junk,Image failed due to: Light sources detected,True,False
-person_002746_image_000791_conf_70.84.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002746_image_000791_conf_70.84.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002747_image_000792_conf_90.13.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002748_image_000792_conf_87.57.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002749_image_000792_conf_85.27.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2971,7 +2971,7 @@ person_002969_image_000831_conf_87.61.jpg,good,good,"Image passed with positive 
 person_002970_image_000831_conf_82.39.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002971_image_000831_conf_77.46.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_002972_image_000831_conf_71.74.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
-person_002973_image_000831_conf_71.17.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002973_image_000831_conf_71.17.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002974_image_000832_conf_87.35.jpg,good,junk,"Image failed due to: Poor aspect ratio, Motion blur detected",True,False
 person_002975_image_000832_conf_85.55.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002976_image_000832_conf_80.66.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -2982,7 +2982,7 @@ person_002980_image_000833_conf_79.18.jpg,good,good,"Image passed with positive 
 person_002981_image_000833_conf_76.19.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002982_image_000833_conf_70.29.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002983_image_000834_conf_86.11.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_002984_image_000834_conf_79.92.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_002984_image_000834_conf_79.92.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_002985_image_000834_conf_79.10.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002986_image_000834_conf_73.78.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_002987_image_000834_conf_73.38.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
@@ -3002,13 +3002,13 @@ person_003000_image_000837_conf_89.79.jpg,good,good,"Image passed with positive 
 person_003001_image_000837_conf_79.61.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_003002_image_000837_conf_78.22.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003003_image_000837_conf_73.53.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_003004_image_000837_conf_72.39.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_003004_image_000837_conf_72.39.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_003005_image_000838_conf_89.17.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003006_image_000838_conf_83.94.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003007_image_000838_conf_83.89.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003008_image_000838_conf_82.99.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003009_image_000838_conf_79.86.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_003010_image_000838_conf_78.31.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_003010_image_000838_conf_78.31.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_003011_image_000839_conf_85.57.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003012_image_000839_conf_85.07.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003013_image_000839_conf_81.56.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -3020,7 +3020,7 @@ person_003018_image_000840_conf_83.94.jpg,good,good,"Image passed with positive 
 person_003019_image_000840_conf_83.89.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003020_image_000840_conf_82.99.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003021_image_000840_conf_79.86.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_003022_image_000840_conf_78.31.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_003022_image_000840_conf_78.31.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_003023_image_000841_conf_88.35.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003024_image_000841_conf_81.73.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003025_image_000841_conf_81.35.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
@@ -3057,7 +3057,7 @@ person_003055_image_000846_conf_78.88.jpg,good,good,"Image passed with positive 
 person_003056_image_000846_conf_78.78.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003057_image_000846_conf_78.18.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_003058_image_000846_conf_77.54.jpg,good,good,"Image passed with positive features: Passed initial quality check, Good image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_003059_image_000846_conf_77.25.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_003059_image_000846_conf_77.25.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_003060_image_000846_conf_76.74.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003061_image_000847_conf_85.92.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003062_image_000847_conf_83.85.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
@@ -3070,12 +3070,12 @@ person_003068_image_000848_conf_83.94.jpg,good,good,"Image passed with positive 
 person_003069_image_000848_conf_83.89.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003070_image_000848_conf_82.99.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003071_image_000848_conf_79.86.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_003072_image_000848_conf_78.31.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_003072_image_000848_conf_78.31.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_003073_image_000849_conf_86.37.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003074_image_000849_conf_84.75.jpg,junk,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",False,True
 person_003075_image_000849_conf_83.66.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003076_image_000849_conf_83.09.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
-person_003077_image_000849_conf_82.45.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
+person_003077_image_000849_conf_82.45.jpg,good,junk,Image failed due to: Light sources detected,True,False
 person_003078_image_000849_conf_81.43.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003079_image_000850_conf_88.75.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True
 person_003080_image_000850_conf_88.04.jpg,good,good,"Image passed with positive features: Passed initial quality check, Excellent image quality, Excellent aspect ratio, Full head visibility, Full torso visibility",True,True

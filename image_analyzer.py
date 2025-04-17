@@ -50,7 +50,7 @@ class PersonImageAnalyzer:
         # ปรับค่าพื้นฐาน
         self.MIN_ASPECT_RATIO = 1.7  # ลดจาก 2.0 เพื่อให้ยอมรับภาพที่มีอัตราส่วนต่ำกว่าเล็กน้อย
         self.BRIGHT_THRESHOLD = 235  # ปรับจาก 240
-        self.BRIGHT_PIXEL_PERCENTAGE = 0.015  # เพิ่มจาก 0.01 เพื่อให้ทนทานต่อแสงมากขึ้น
+        self.BRIGHT_PIXEL_PERCENTAGE = 0.014  # เพิ่มจาก 0.01 เพื่อให้ทนทานต่อแสงมากขึ้น
 
         # ตำแหน่งจุดสำคัญของร่างกายสำหรับการวิเคราะห์
         # กำหนดจุดสำคัญตามดัชนีของ YOLO keypoints
@@ -299,7 +299,7 @@ class PersonImageAnalyzer:
 
         # 5. คะแนนลบจากแหล่งกำเนิดแสงและการบดบัง
         if metrics.has_light_sources:
-            score -= 60  # เพิ่มจาก 40
+            score -= 63  # เพิ่มจาก 40
             features.append("Light sources detected")
 
         if metrics.has_occlusion:
@@ -407,8 +407,8 @@ class PersonImageAnalyzer:
 
         # เพิ่มเงื่อนไขที่เข้มงวดขึ้นสำหรับการตรวจจับแสงจ้า
         has_light_sources = (bright_percentage > self.BRIGHT_PIXEL_PERCENTAGE) or \
-                            (max_brightness > 230 and bright_block_percentage > 0.05) or \
-                            (bright_blocks > 2 and max_brightness > 220)
+                            (max_brightness > 225 and bright_block_percentage > 0.04) or \
+                            (bright_blocks > 1 and max_brightness > 210)
 
         return has_light_sources
 
