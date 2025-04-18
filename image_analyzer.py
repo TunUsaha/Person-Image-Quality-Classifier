@@ -299,7 +299,7 @@ class PersonImageAnalyzer:
 
         # 5. คะแนนลบจากแหล่งกำเนิดแสงและการบดบัง
         if metrics.has_light_sources:
-            score -= 63  # เพิ่มจาก 40
+            score -= 65  # เพิ่มจาก 40
             features.append("Light sources detected")
 
         if metrics.has_occlusion:
@@ -312,7 +312,7 @@ class PersonImageAnalyzer:
             features.append("Motion blur detected")
 
         # ตัดสินใจขั้นสุดท้าย
-        final_good = score >= 60  # ลดจาก 65
+        final_good = score >= 61  # ลดจาก 65
 
         # สร้างเหตุผล
         if final_good:
@@ -405,10 +405,21 @@ class PersonImageAnalyzer:
         bright_blocks = sum(1 for b in brightness_values if b > 220)
         bright_block_percentage = bright_blocks / len(brightness_values) if brightness_values else 0
 
+        # เพิ่มการตรวจสอบความแตกต่างระหว่างส่วนที่สว่างที่สุดและส่วนที่มืดที่สุด
+        brightest_blocks = sorted(brightness_values, reverse=True)[:5]  # 5 บล็อกที่สว่างที่สุด
+        darkest_blocks = sorted(brightness_values)[:5]  # 5 บล็อกที่มืดที่สุด
+
+        if len(brightest_blocks) >= 5 and len(darkest_blocks) >= 5:
+            brightness_difference = np.mean(brightest_blocks) - np.mean(darkest_blocks)
+            extreme_contrast = brightness_difference > 200
+        else:
+            extreme_contrast = False
+
         # เพิ่มเงื่อนไขที่เข้มงวดขึ้นสำหรับการตรวจจับแสงจ้า
         has_light_sources = (bright_percentage > self.BRIGHT_PIXEL_PERCENTAGE) or \
-                            (max_brightness > 225 and bright_block_percentage > 0.04) or \
-                            (bright_blocks > 1 and max_brightness > 210)
+                            (max_brightness > 220 and bright_block_percentage > 0.035) or \
+                            (bright_blocks > 1 and max_brightness > 200) or \
+                            extreme_contrast
 
         return has_light_sources
 
